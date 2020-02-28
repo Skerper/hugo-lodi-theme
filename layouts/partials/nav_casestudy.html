@@ -1,9 +1,11 @@
 <nav class="main-navigation stuckMenu">
     <a href="{{ .Site.BaseURL }}">
-        <img class="logo" style="padding:10px" src="{{ .Site.BaseURL }}img/home.png" alt="Home">
+        <img class="logo" style="padding:10px" src="{{ .Site.BaseURL }}img/logo.jpg" alt="Home">
     </a>
-    <h5>{{ .Params.nav_heading }}</h5>
+    <h5>Elliott Smith// {{ .Params.nav_heading }}</h5>
+    
     <div class="sub-navigation">
+        <a href="{{ .Site.BaseURL }}" class="main-navigation-link">Home</a>
         <a href="{{ .Site.BaseURL }}" class="main-navigation-link" data-scroll-goto="2">Projects</a>
     </div>
 </nav>

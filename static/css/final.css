@@ -354,6 +354,12 @@ section {
   margin-top: 30px;
 }
 
+.main-case-study .case-hero{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .results-content {
   max-width: 900px;
   color: black;
@@ -426,6 +432,10 @@ section {
   max-width: 100%;
 }
 
+.case-study-item a img{
+  border-radius: 50%;
+}
+
 .case-details {
   margin: 0;
   padding: 0;
@@ -459,6 +469,10 @@ section {
   border-radius: 2px;
   background: #f1f1f1;
   margin-right: 1em;
+}
+
+.case-detail-link img{
+  max-height: 1em;
 }
 
 @media all and (max-width: 981px) {
