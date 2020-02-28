@@ -6,22 +6,30 @@
         <p class="summary">{{ .Params.case_summary }}</p>
         <div class="case-details">
             <div class="case-details-item">
-                <p><strong>Team</strong>
-                    {{ range .Params.team }}
+                <p><strong>Languages</strong>
+                    {{ range .Params.langs }}
                     <br>{{ . }}
                     {{end}}
                 </p>
             </div>
             <div class="case-details-item">
-                <p><strong>My Role</strong>
-                    {{ range .Params.roles }}
+                <p><strong>Frameworks</strong>
+                    {{ range .Params.frameworks }}
                     <br>{{ . }}
                     {{ end }}
                 </p>
             </div>
             <div class="case-details-item">
-                <p><strong>Methods</strong>
-                    {{ range .Params.methods }}
+                <p><strong>Technologies</strong>
+                    {{ range .Params.techs }}
+                    <br>{{ . }}
+                    {{ end }}
+                </p>
+            </div>
+            
+            <div class="case-details-item">
+                <p><strong>Integrations</strong>
+                    {{ range .Params.integs }}
                     <br>{{ . }}
                     {{ end }}
                 </p>
