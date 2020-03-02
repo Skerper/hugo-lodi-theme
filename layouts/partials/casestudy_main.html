@@ -12,7 +12,7 @@
                     {{end}}
                 </p>
             </div>
-            {{ if .Params.enable_frameworks }}
+            {{ if isset .Params "frameworks" }}
             <div class="case-details-item">
                 <p><strong>Frameworks</strong>
                     {{ range .Params.frameworks }}
@@ -21,7 +21,7 @@
                 </p>
             </div>
             {{end}}
-            {{ if .Params.enable_techs }}
+            {{ if isset .Params "techs" }}
             <div class="case-details-item">
                 <p><strong>Technologies</strong>
                     {{ range .Params.techs }}
@@ -30,7 +30,7 @@
                 </p>
             </div>
             {{end}}
-            {{ if .Params.enable_integs }}
+            {{ if isset .Params "integs" }}
             <div class="case-details-item">
                 <p><strong>Integrations</strong>
                     {{ range .Params.integs }}
