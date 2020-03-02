@@ -35,6 +35,17 @@ footer {
   border-bottom: 1px solid #F0F0F0;
 }
 
+.footer-attribs{
+  margin-top:5em;
+  position:absolute;
+}
+
+.footer-attribs p{
+  color:#BBBBBB;
+  padding:0px;
+  margin:0px;
+}
+
 .main-navigation {
   z-index: 999;
   width: 100%;

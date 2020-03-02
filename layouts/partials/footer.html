@@ -128,5 +128,13 @@
                 {{ end }}
     </div>
 
-    <a href="#" style="color: #574cdd; text-decoration: underline;" data-scroll-goto="0">Back to top</a>
+    {{ if isset .Site.Params.Footer "attribs"}}
+    <div class="footer-attribs">
+        {{ range $paragraph := .Site.Params.Footer.attribs }}
+            <p>{{ $paragraph | markdownify }}</p>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <a href="#" style="color: #0D9AFF; text-decoration: underline;" data-scroll-goto="0">Back to top</a>
 </footer>
